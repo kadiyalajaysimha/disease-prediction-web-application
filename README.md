@@ -13,3 +13,5 @@ model1.py is the model for cardiovascular disease prediction.
 Thee datasets got are preprocessed and are trained with various algorithms and the model with high F1 score are considered.
 
 The jupyter notebooks for both diseases are present in this repository.
+
+The Procfile that is present here can be used to deploy the app in heroku cloud. 
