@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">   
+    <title>Diabetes Prediction</title>
+    </head>
+    <body style="background-color:cornflowerblue;">
+        <div>
+            <form method="POST" action="/cardio_predict">
+                <fieldset>
+                    <h1>Know your chances of CardioVascular Disease</h1>
+                    <br>
+                    <div>
+                        <h5>Age</h5>
+                        <input type="text" name="Age" placeholder="Age" required="required" />
+                    </div>
+                    <br>
+                    <div>
+                        <h5>Gender (1 - female, 2 - male)</h5>
+                        <input type="text" name="Gender" placeholder="Gender" required="required" />
+                    </div>
+                    <br>
+                    <div>
+                        <h5>Height (cms)</h5>
+                        <input type="text" name="Height" placeholder="Height" required="required" />
+                    </div>
+                    <br>
+                    <div>
+                        <h5>Weight (kgs)</h5>
+                        <input type="text" name="Weight" placeholder="Weight" required="required" />
+                    </div>
+                    <br>
+                    <div>
+                        <h5>BloodPressure (Systolic)</h5>
+                        <input type="text" name="Systolic" placeholder="Systolic" required="required" />
+                    </div>
+                    <br>
+                    <div>
+                        <h5>BloodPressure (Diastolic)</h5>
+                        <input type="text" name="Diastolic" placeholder="Diastolic" required="required" />
+                    </div>
+                    <br>
+                    <div>
+                        <h5>Cholesterol (1: normal, 2: above normal, 3: well above normal)</h5>
+                        <input type="text" name="Cholesterol" placeholder="Cholesterol" required="required" />
+                    </div>
+                    <br>
+                    <div>
+                        <h5>Glucose (1: normal, 2: above normal, 3: well above normal)</h5>
+                        <input type="text" name="Glucose" placeholder="Glucose" required="required" />
+                    </div>
+                    <br>
+                    <div>
+                        <h5>Smoking (1=Yes,0=No)</h5>
+                        <input type="text" name="Smoking" placeholder="Smoking" required="required" />
+                    </div>
+                    <br>
+                    <div>
+                        <h5>Alcohol (1=Yes,0=No)</h5>
+                        <input type="text" name="Alcohol" placeholder="Alcohol" required="required" />
+                    </div>
+                    <br>
+                    <div>
+                        <h5>Active (1=Yes,0=No)</h5>
+                        <input type="text" name="Active" placeholder="Active" required="required" />
+                    </div>
+                    <br>
+                </fieldset> 
+                <button type="submit">Predict</button>   
+            </form>
+            <br>
+            <h5>{{ display_predicted }}</h5>
+        </div>
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
