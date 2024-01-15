@@ -1,17 +1,15 @@
-# DiseasepredictionwithMLandflask
+# Disease Prediction Web Application #
 
-It is disease prediction web application built using #flask.
+This web application is designed for predicting two major diseases: diabetes and cardiovascular disease. Built using the Flask framework, the application utilizes machine learning models trained on datasets obtained from Kaggle. The predictive models, ***`model.py`*** for diabetes prediction and ***`model1.py`*** for cardiovascular disease prediction have been developed through a rigorous process of preprocessing and training using various algorithms. The final models are selected based on their high F1 score, ensuring accuracy in disease predictions.
 
-The disease predictions that are done are diabetes prediction and cardiovascular disease prediction.
+## Models ##
+* ### Diabetes Prediction Model (model.py):
+  This model is specifically tailored for predicting diabetes based on the dataset used for its training.
+* ### Cardiovascular Disease Prediction Model (model1.py):
+  This model focuses on predicting cardiovascular diseases and is trained on a distinct dataset from Kaggle.
 
-The model.py and model1.py are the two models trained using two datasets got from kaggle.
+## Dataset and Training ##
+The datasets used for training are included in this repository, and the associated Jupyter notebooks (**diabetes_prediction.ipynb** and **cardiovascular_prediction.ipynb**) provide insights into the preprocessing steps and the training process. The models have been fine-tuned to achieve optimal predictive performance.
 
-model.py is the model for diabetes prediction.
-
-model1.py is the model for cardiovascular disease prediction.
-
-Thee datasets got are preprocessed and are trained with various algorithms and the model with high F1 score are considered.
-
-The jupyter notebooks for both diseases are present in this repository.
-
-The Procfile that is present here can be used to deploy the app in heroku cloud. 
+## Deployment ##
+The repository includes a Procfile that facilitates the deployment of the application on the Heroku cloud platform. Users can easily deploy the disease prediction web application by leveraging this configuration file.
