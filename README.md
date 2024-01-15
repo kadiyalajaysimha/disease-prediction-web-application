@@ -1,11 +1,11 @@
 # Disease Prediction Web Application #
 
-This web application is designed for predicting two major diseases: diabetes and cardiovascular disease. Built using the Flask framework, the application utilizes machine learning models trained on datasets obtained from Kaggle. The predictive models, ***`model.py`*** for diabetes prediction and ***`model1.py`*** for cardiovascular disease prediction have been developed through a rigorous process of preprocessing and training using various algorithms. The final models are selected based on their high F1 score, ensuring accuracy in disease predictions.
+This web application is designed for predicting two major diseases: diabetes and cardiovascular disease. Built using the Flask framework, the application utilizes machine learning models trained on datasets obtained from Kaggle. The predictive models for diabetes prediction and cardiovascular disease prediction have been developed through a rigorous process of preprocessing and training using various algorithms. The final models are selected based on their high F1 score, ensuring accuracy in disease predictions.
 
 ## Models ##
-* ### Diabetes Prediction Model (model.py):
+* ### Diabetes Prediction Model (used Random Forest Classifier):
   This model is specifically tailored for predicting diabetes based on the dataset used for its training.
-* ### Cardiovascular Disease Prediction Model (model1.py):
+* ### Cardiovascular Disease Prediction Model (used Gradient Boosting Classifier):
   This model focuses on predicting cardiovascular diseases and is trained on a distinct dataset from Kaggle.
 
 ## Dataset and Training ##
